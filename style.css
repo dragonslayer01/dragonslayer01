@@ -1,0 +1,63 @@
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+section {
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+section h2 {
+    color: #333;
+}
+
+#projects .project {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dotted #ccc;
+}
+
+#projects .project:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #333;
+    color: #fff;
+    position: relative; /* Changed from fixed to relative for better flow */
+    bottom: 0;
+    width: 100%;
+}
+
+/* Basic responsive design */
+@media (max-width: 768px) {
+    header, section, footer {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+}
